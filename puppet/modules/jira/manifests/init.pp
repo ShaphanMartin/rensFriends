@@ -16,10 +16,18 @@ class jira(
 			require => Exec['download_jira'],
 	}
 	
-	
+	exec{'install_expect':
+			command => "/usr/bin/yum -y install expect",
+			before => Exec[run_script],
+			user => root,
+
+	}
 	 exec{'run_script':
-			command => "/vagrant/puppet/modules/jira/files/input.sh",
+			cwd => "/vagrant/puppet/modules/jira/files/",
+			command => "/usr/bin/expect /vagrant/puppet/modules/jira/files/input.exp",
 			require => Exec['change_access'],
+			user => root,
+
 	}
 	
 }

@@ -1,0 +1,23 @@
+#!/usr/bin/expect -f
+spawn "./atlassian-jira-6.3.13-x64.bin"
+set timeout 20
+expect "Admin rights"
+send "y\r"
+expect "Enter"
+send "o\r"
+expect "Express Install "
+send "2\r" 
+expect "jira will be installed"
+send "\n"
+expect "jira deafult location"
+send "\n"
+expect "Set Custom Value for HTTP"
+send "2\r" 
+expect "HTTP Port "
+send "8081\r" 
+expect "Control Port "
+send "8006\r" 
+expect "install JIRA as a service"
+send "y\r" 
+
+interact
