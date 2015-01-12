@@ -1,0 +1,13 @@
+1. Create (or add to) a .bashrc file in home directory (vi ~/.bashrc)
+2. Add the following to this file
+
+#!/bin/bash
+# alias.sh
+
+shopt -s expand_aliases
+
+alias pushit='start pushit_cut.mp3 && git push origin master'
+
+3. Ensure that the pushit_cut.mp3 is in the working directory
+4. Reload .bashrc by typing ". ~/.bashrc"
+4. Push it real good.
