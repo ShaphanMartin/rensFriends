@@ -20,5 +20,7 @@ send "8081\r"
 expect "Control Port" 
 send "8006\r" 
 expect "Install JIRA as Service?" 
-send "y\r" 
+send "y\r"
+expect eof
+send "\r\" 
 interact
