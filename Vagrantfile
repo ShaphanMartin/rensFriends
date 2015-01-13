@@ -13,5 +13,5 @@ Vagrant.configure(2) do |config|
 		puppet.manifests_path = "puppet/manifests"
 		puppet.module_path = "puppet/modules"
 	end
-	config.vm.provision "shell", path: "jenkins_start"
+	config.vm.provision "shell", path: "jenkins_start.sh"
 end
