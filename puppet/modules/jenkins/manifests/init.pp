@@ -5,9 +5,7 @@ class jenkins(
 {
 	exec{'download_jenkins':
 			cwd => "/vagrant/puppet/modules/jenkins/files",	
-			command => "/usr/bin/wget –O /etc/yum.repos.d/Jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo",
-			logoutput => on_failure,
-			creates => "/etc/puppet/modules/jenkins/files/",
+			command => "/usr/bin/wget -O /etc/yum.repos.d/Jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo",
 			user => root,
 	}
 	 exec{'import_rpm':
@@ -18,6 +16,7 @@ class jenkins(
 	exec{'install_jenkins':
 			command => "/usr/bin/yum -y install jenkins",
 			user => root,
+			require => Exec['import_rpm'],
 
 	}
 	
