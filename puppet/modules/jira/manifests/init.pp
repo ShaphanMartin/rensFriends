@@ -23,7 +23,7 @@ class jira(
 
 	}
 	 exec{'run_script':
-			cwd => "/vagrant/puppet/modules/jira/files/",
+			cwd => "/vagrant/puppet/modules/jira/files",
 			command => "/usr/bin/expect /vagrant/puppet/modules/jira/files/input.exp",
 			require => Exec['change_access'],
 			user => root,
