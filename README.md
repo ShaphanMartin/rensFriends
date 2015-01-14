@@ -57,7 +57,7 @@ In the folder you created
 
 ##Starting the Nexus Service
 
-1.
+1. nexus start
 2. using the ip of the machine
 3. type `http://machineip:8088/nexus`
 4. (may take some time to load)
