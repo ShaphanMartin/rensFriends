@@ -33,7 +33,14 @@ class nexus(
 			cwd => "/vagrant/puppet/modules/nexus/files",
 			command => "/usr/bin/sudo ln -s nexus-2.11.1-01 nexus",
 			user => root,
-			#require => Exec['copy_nexus'],
+			require => Exec['download_nexus'],
 	}
+	exec{'setenv':
+			cwd => "/vagrant/puppet/modules/nexus/files",
+			command => "/usr/bin/echo 'PATH=\$PATH:/vagrant/puppet/modules/nexus/files/nexus-2.11.1-01/bin' >> /home/vagrant/.bashrc && echo 'export PATH' >> /home/vagrant/.bashrc",
+			user => root,
+			require => Exec['download_nexus'],
+	}
+			
 	
 }
