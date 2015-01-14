@@ -1,6 +1,6 @@
 #rensFriends
 
-##Config
+##Configuring Git
 
 1. Go into git bash with admin rights 
 2. Create an empty folder to pull your project into (using mkdir)
@@ -16,7 +16,8 @@
 4.  set the dirctory to the folder you created
 5.  press enter to have set no password
 6. `cat c/Users/training##/.ssh/id_rsa.pub`copy the key
-7.  now on the github website add the ssh key to your account by Settings > SSH Keys > Add SSH Key > give it a Title and paste the key > Add Key
+7.  now on the github website add the ssh key to your account by: 
+    Settings > SSH Keys > Add SSH Key > give it a Title and paste the key > Add Key
 8.  `ssh -T git@github.com`
 9.  when you are greated with your name
 10. `git pull git@github.com:ShaphanMartin/rensFriends.git`
