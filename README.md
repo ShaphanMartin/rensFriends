@@ -46,18 +46,18 @@ In the folder you created
 
 ##Jira
 1. using the ip of the machine
-2. type http://machineip:8081
+2. type `http://machineip:8081`
 3. (may take some time to load)
 
 ##Starting Jenkins Service
 
 1. starts the jenkins service `sudo service jenkins start`
 2. using the ip of the machine
-3. type http://machineip:8080
+3. type `http://machineip:8080`
 
 ##Starting the Nexus Service
 
 1.
 2. using the ip of the machine
-3. type http://machineip:8088/nexus
+3. type `http://machineip:8088/nexus`
 4. (may take some time to load)
