@@ -28,7 +28,7 @@ In the folder you created
 
 #Checking if all are installed
 
-1.ssh into the machine using the git bash `vagrant ssh`
+1. ssh into the machine using the git bash `vagrant ssh`
 2. gets the ip of the machine using `ifconfig`
 3. save the ip of the machine
 
