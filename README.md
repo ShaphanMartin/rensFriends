@@ -64,7 +64,7 @@ In the folder you created
 ##Nexus setup
 Notice about running Nexus
 
-1. In the nexus propeties file '/vagrant/puppet/modules/nexus/files/nexus-2.11.1-01/conf/nexus.properties'
-2. ensure the application port is set to '8088'
+1. In the nexus propeties file `/vagrant/puppet/modules/nexus/files/nexus-2.11.1-01/conf/nexus.properties`
+2. ensure the application port is set to `8088`
 3. ensure the application host is set to your vm ip
 4. Then restart the nexus system 'nexus restart'
