@@ -19,5 +19,11 @@ class jenkins(
 			require => Exec['import_rpm'],
 
 	}
+		exec{'start_service':
+			command => "/usr/sbin/service jenkins start",
+			user => root,
+			require => Exec['install_jenkins'],
+
+	}
 	
 }
