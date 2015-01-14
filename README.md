@@ -23,5 +23,6 @@
 10. `git pull git@github.com:ShaphanMartin/rensFriends.git`
 
 ## Starting the vagrant VM
+In the folder you created 
 `vagrant up`
 
