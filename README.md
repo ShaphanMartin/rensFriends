@@ -26,3 +26,38 @@
 In the folder you created 
 `vagrant up`
 
+#Checking if all are installed
+
+1. ssh into the machine using the git bash `vagrant ssh`
+2. gets the ip of the machine using `ifconfig`
+3. save the ip of the machine
+
+##Java
+
+`java -version`
+
+##Maven
+
+`mvn --version`
+
+##Git
+
+`git --version`
+
+##Jira
+1. using the ip of the machine
+2. type `http://machineip:8081`
+3. (may take some time to load)
+
+## [Jenkins](https://www.youtube.com/watch?v=LkCNJRfSZBU)
+
+1. starts the jenkins service `sudo service jenkins start`
+2. using the ip of the machine
+3. type `http://machineip:8080`
+
+##Nexus
+
+1. `nexus start`
+2. using the ip of the machine
+3. type `http://machineip:8088/nexus`
+4. (may take some time to load)
