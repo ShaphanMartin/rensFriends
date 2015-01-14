@@ -25,6 +25,7 @@
 ## Starting the vagrant VM
 In the folder you created 
 `vagrant up`
+may up to 500 seconds
 
 #Checking if all are installed
 
