@@ -14,5 +14,5 @@ Vagrant.configure(2) do |config|
 		puppet.module_path = "puppet/modules"
 	end
 	config.vm.provision "shell", path: "jenkins_start.sh"
-	config.vm.provision "shell", path: "nexus_confi.sh"
+	config.vm.provision "shell", path: "nexus_conf.sh"
 end
